@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style3.css" />
+        <link rel="icon" href="/img/favicon.ico" />
+        <title>날씨api</title>
+    </head>
+    <body>
+        <div class="bg">
+            <img class="phone" src="img/smartphone.png" alt="스마트폰" />
+            <div class="wrap">
+                <h2>현재 날씨</h2>
+                <div>
+                    <span>기온:</span>
+                    <span id="temp"></span>
+                    <span>℃</span>
+                </div>
+                <div>
+                    <span>위치:</span>
+                    <span id="place"></span>
+                </div>
+                <div>
+                    <span>풍속:</span>
+                    <span id="wind"></span>
+                    <span>m/s</span>
+                </div>
+                <div>
+                    <span>날씨 설명:</span>
+                    <span id="des"></span>
+                </div>
+                <button class="locat btn blue mini">현재위치</button><br />
+                <div id="loc">
+                    <!-- <span>현재위치</span>
+                    <p id="loc1"></p>
+                    <p id="loc2"></p> -->
+                </div>
+                <img id="icon" />
+                <img src="" id="imgWrap" /><br />
+                <div class="butt">
+                    <button class="seoul btn blue mini">서울</button>
+                    <button class="tokyo btn blue mini">도쿄</button>
+                    <button class="london btn blue mini">런던</button>
+                    <button class="paris btn blue mini">파리</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // const x = document.querySelector("#demo");
+
+            // function getLocation() {
+            //     navigator.geolocation.getCurrentPosition(showPosition);
+            // }
+
+            // function showPosition(position) {
+            //     lat = position.coords.latitude;
+            //     log = position.coords.longitude;
+            //     console.log("위도", lat);
+            //     console.log("경도", log);
+            // }
+        </script>
+        <script src="js/apikey.js"></script>
+        <script src="js/custom3.js"></script>
+    </body>
+</html>
